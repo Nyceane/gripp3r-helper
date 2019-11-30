@@ -1,0 +1,105 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "gripper bot",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "HelloWorldIntent",
+                  "slots": [],
+                  "samples": [
+                      "hello",
+                      "how are you",
+                      "say hi world",
+                      "say hi",
+                      "hi",
+                      "say hello world",
+                      "say hello"
+                  ]
+              },
+              {
+                  "name": "ComeIntent",
+                  "slots": [],
+                  "samples": [
+                      "Come",
+                      "Come to me",
+                      "Come here"
+                  ]
+              },
+              {
+                  "name": "TakeIntent",
+                  "slots": [
+                      {
+                          "name": "Item",
+                          "type": "ItemType"
+                      }
+                  ],
+                  "samples": [
+                      "Take this",
+                      "Take it",
+                      "Take this item",
+                      "Take this {Item}",
+                      "Take the {Item}"
+                  ]
+              },
+              {
+                  "name": "BringIntent",
+                  "slots": [
+                      {
+                          "name": "Item",
+                          "type": "ItemType"
+                      }
+                  ],
+                  "samples": [
+                      "Bring me the stuff",
+                      "Bring me my item",
+                      "Fetch my stuff",
+                      "Bring me my {Item}"
+                  ]
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              }
+          ],
+          "types": [
+              {
+                  "name": "ItemType",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "bottle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "cane"
+                          }
+                      },
+                     {
+                          "name": {
+                              "value": "medicine"
+                          }
+                      },
+                     {
+                          "name": {
+                              "value": "cup"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}
